@@ -4,11 +4,9 @@
  * @param {number} x
  * @return {boolean}
  */
-const argv = process.argv;
-const paramX = argv[2] ? Number(argv[2]) : 121;
+const paramX = process.argv[2] ? Number(process.argv[2]) : 121;
 
 /**
- * 解题思路
  * 首先判断 x<0 时 直接返回false
  * 然后 转为字符串判断
  */
@@ -22,7 +20,6 @@ var isPalindrome = function (x) {
 console.log(isPalindrome(paramX));
 
 /**
- * 解题思路
  * 首先判断 x<0 时 直接返回false
  * 然后 计算出一个新数字
  */

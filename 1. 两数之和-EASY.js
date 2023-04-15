@@ -8,7 +8,6 @@
 const paramNums = [2, 7, 11, 15];
 const paramTarget = 9;
 /**
- * 解题思路
  * 先创建一个map记录 差值和当前下标的关联表 key:target-nums[i] value:i
  * 后续的元素只要map中寻找到对应的记录，说明两数匹配
  */
