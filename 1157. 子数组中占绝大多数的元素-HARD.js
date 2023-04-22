@@ -3,6 +3,15 @@
 /**
  * @param {number[]} arr
  */
+
+/**
+ * 首先生成一个对应位置的正序列表
+ * [0,0,1,1]
+ * new Map([
+ *    [0,[0,1]]
+ *    [1,[2,3]]
+ * ])
+ */
 let MajorityChecker = function (arr) {
   this.map = new Map();
   for (let i = 0; i < arr.length; i++) {
@@ -20,6 +29,7 @@ let MajorityChecker = function (arr) {
  * @param {number} threshold
  * @return {number}
  */
+// 随机取样
 MajorityChecker.prototype.query = function (left, right, threshold) {
   const length = right - left + 1;
   for (let i = 0; i < 20; i++) {
@@ -34,7 +44,7 @@ MajorityChecker.prototype.query = function (left, right, threshold) {
   }
   return -1;
 };
-
+// 双指针法 寻找target后的最近位置
 function binarySearch(arr, target) {
   let left = 0;
   let right = arr.length - 1;

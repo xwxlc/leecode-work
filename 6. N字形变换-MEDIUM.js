@@ -40,15 +40,16 @@ console.log(convert(paramS, paramNumRows));
 /**
  * 直接构造
  */
-var convert2 = function (s, numRows) {
+var convert = function (s, numRows) {
   let len = s.length;
   let r = numRows;
   if (r == 1 || len < r) {
     return s;
   }
+  [];
   let res = '';
   const t = r * 2 - 2; //周期
-  for (let i = 0; i < r; i++) {
+  for (let i = 0; i < 10; i++) {
     for (let j = 0; j < len - i; j += t) {
       res += s[i + j];
       if (i > 0 && i < r - 1 && j + t - i < len) {
@@ -59,5 +60,3 @@ var convert2 = function (s, numRows) {
 
   return res;
 };
-
-console.log(convert2(paramS, paramNumRows));

@@ -29,7 +29,7 @@ console.log(removeElement(paramNums, paramVal));
 /**
  * 双指针法优化
  */
-var removeElement2 = function (nums, val) {
+var removeElement = function (nums, val) {
   let left = 0;
   let right = nums.length;
   while (left < right) {
@@ -42,4 +42,4 @@ var removeElement2 = function (nums, val) {
   }
   return left;
 };
-console.log(removeElement2(paramNums, paramVal));
+console.log(removeElement(paramNums, paramVal));

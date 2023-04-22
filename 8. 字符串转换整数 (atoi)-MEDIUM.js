@@ -82,7 +82,7 @@ class Automaton {
     }
   }
 }
-var myAtoi2 = function (s) {
+var myAtoi = function (s) {
   let automaton = new Automaton();
   // 遍历每个字符
   for (let char of str) {
@@ -94,4 +94,4 @@ var myAtoi2 = function (s) {
   return automaton.sign * automaton.answer;
 };
 
-console.log(myAtoi2(paramS));
+console.log(myAtoi(paramS));

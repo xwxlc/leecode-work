@@ -23,7 +23,7 @@ console.log(isPalindrome(paramX));
  * 首先判断 x<0 时 直接返回false
  * 然后 计算出一个新数字
  */
-var isPalindrome2 = function (x) {
+var isPalindrome = function (x) {
   if (x < 0 || (x % 10 == 0 && x != 0)) {
     return false;
   }
@@ -34,4 +34,4 @@ var isPalindrome2 = function (x) {
   }
   return x == reverseNumber || x == Math.floor(reverseNumber / 10);
 };
-console.log(isPalindrome2(paramX));
+console.log(isPalindrome(paramX));

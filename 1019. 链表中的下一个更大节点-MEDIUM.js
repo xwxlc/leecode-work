@@ -31,7 +31,7 @@ var nextLargerNodes = function (head) {
  * 遍历链表，从栈顶开始，如果栈顶的元素值比当前链表节点的值小，脱出栈顶，将栈顶所在位置的结果值设置为当前节点的值，否则，将该节点值以及该位置推入链表
  */
 
-var nextLargerNodes2 = function (head) {
+var nextLargerNodes = function (head) {
   let answer = [];
   let stack = [];
   let i = 0;

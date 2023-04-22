@@ -29,7 +29,7 @@ console.log(isValid(paramS));
 /**
  * 匹配法
  */
-var isValid2 = function (s) {
+var isValid = function (s) {
   while (
     s.indexOf('()') !== -1 ||
     s.indexOf('{}') !== -1 ||
@@ -45,4 +45,4 @@ var isValid2 = function (s) {
     return true;
   }
 };
-console.log(isValid2(paramS));
+console.log(isValid(paramS));

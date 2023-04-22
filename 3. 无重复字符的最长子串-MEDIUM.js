@@ -36,7 +36,7 @@ console.log(lengthOfLongestSubstring(paramS));
  * 判断不重复字符串的长度 记录最长值
  * 更新 map 保存最近的 字符串与下标
  */
-var lengthOfLongestSubstring2 = function (s) {
+var lengthOfLongestSubstring = function (s) {
   const len = s.length;
   let map = new Map();
   let res = 0;
@@ -52,4 +52,4 @@ var lengthOfLongestSubstring2 = function (s) {
   return res;
 };
 
-console.log(lengthOfLongestSubstring2(paramS));
+console.log(lengthOfLongestSubstring(paramS));

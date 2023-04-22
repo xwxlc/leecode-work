@@ -27,7 +27,7 @@ console.log(longestCommonPrefix(paramStrs));
 /**
  * 纵向扫描
  */
-var longestCommonPrefix2 = function (strs) {
+var longestCommonPrefix = function (strs) {
   let res = '';
   for (let j = 0; j < strs[0].length; j++) {
     for (let i = 0; i < strs.length; i++) {
@@ -39,4 +39,4 @@ var longestCommonPrefix2 = function (strs) {
   }
   return res;
 };
-console.log(longestCommonPrefix2(paramStrs));
+console.log(longestCommonPrefix(paramStrs));
