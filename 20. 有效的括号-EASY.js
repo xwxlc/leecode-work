@@ -30,11 +30,7 @@ console.log(isValid(paramS));
  * 匹配法
  */
 var isValid = function (s) {
-  while (
-    s.indexOf('()') !== -1 ||
-    s.indexOf('{}') !== -1 ||
-    s.indexOf('[]') !== -1
-  ) {
+  while (s.indexOf('()') !== -1 || s.indexOf('{}') !== -1 || s.indexOf('[]') !== -1) {
     s = s.replace(/\(\)/g, '');
     s = s.replace(/\{\}/g, '');
     s = s.replace(/\[\]/g, '');
