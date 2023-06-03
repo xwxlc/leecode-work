@@ -3,15 +3,15 @@
  * @param {string} text
  * @return {number}
  */
-const paramText = "bbababaaaa";
+const paramText = 'bbababaaaa';
 var maxRepOpt1 = function (text) {
   const count = new Map();
   for (let i = 0; i < text.length; i++) {
     const k = text[i];
-    count.set(k,(count.get(k) || 0) + 1);
+    count.set(k, (count.get(k) || 0) + 1);
   }
   let max = 0;
-  for (let i = 0; i < text.length;) {
+  for (let i = 0; i < text.length; ) {
     let curr = 0;
     const k = text[i];
     // 计算连续字符串长度
@@ -32,8 +32,8 @@ var maxRepOpt1 = function (text) {
     if (curr < count.get(k)) {
       curr += 1;
     }
-    max = Math.max(curr, max) 
+    max = Math.max(curr, max);
   }
-  return max
+  return max;
 };
 console.log(maxRepOpt1(paramText));
